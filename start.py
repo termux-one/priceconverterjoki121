@@ -7,7 +7,7 @@ bot = telebot.TeleBot('5686176002:AAELjkeYWFCHneePjIHQkezkQ21O7vHAbd0')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    markup = types.ReplyKeyboardMarkup()
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     rate_button = types.KeyboardButton('Курсы валют')
     price_button = types.KeyboardButton('Стоимость')
     pay_button = types.KeyboardButton('Готовая выплата')
